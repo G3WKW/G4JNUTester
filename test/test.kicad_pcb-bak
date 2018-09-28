@@ -1,15 +1,15 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 26)
-    (no_connects 25)
+    (links 27)
+    (no_connects 26)
     (area 0 0 0 0)
     (thickness 1.6)
     (drawings 0)
     (tracks 2)
     (zones 0)
     (modules 17)
-    (nets 14)
+    (nets 13)
   )
 
   (page A4)
@@ -98,12 +98,11 @@
   (net 5 "Net-(R3-Pad2)")
   (net 6 "Net-(R5-Pad1)")
   (net 7 "Net-(C1-Pad1)")
-  (net 8 "Net-(R8-Pad2)")
-  (net 9 +9V)
-  (net 10 "Net-(LED1-Pad2)")
-  (net 11 "Net-(R1-Pad2)")
-  (net 12 "Net-(RD1-Pad1)")
-  (net 13 /Link)
+  (net 8 +9V)
+  (net 9 "Net-(LED1-Pad2)")
+  (net 10 "Net-(R1-Pad2)")
+  (net 11 "Net-(RD1-Pad1)")
+  (net 12 /Link)
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -123,7 +122,6 @@
     (add_net "Net-(R3-Pad2)")
     (add_net "Net-(R5-Pad1)")
     (add_net "Net-(R5-Pad2)")
-    (add_net "Net-(R8-Pad2)")
     (add_net "Net-(RD1-Pad1)")
   )
 
@@ -186,7 +184,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
-      (net 9 +9V))
+      (net 8 +9V))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 2 GND))
     (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Angled_1x02_Pitch2.54mm.wrl
@@ -342,7 +340,7 @@
     (pad 1 thru_hole rect (at 0 0 90) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 4 "Net-(LED1-Pad1)"))
     (pad 2 thru_hole circle (at 2.54 0 90) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
-      (net 10 "Net-(LED1-Pad2)"))
+      (net 9 "Net-(LED1-Pad2)"))
     (model ${KISYS3DMOD}/LEDs.3dshapes/LED_D1.8mm_W1.8mm_H2.4mm_Horizontal_O1.27mm_Z1.6mm.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
@@ -374,9 +372,9 @@
     (fp_line (start 6.05 1.15) (end 6.05 -1.15) (layer F.CrtYd) (width 0.05))
     (fp_line (start 6.05 -1.15) (end -0.95 -1.15) (layer F.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0 180) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 10 "Net-(LED1-Pad2)"))
+      (net 9 "Net-(LED1-Pad2)"))
     (pad 2 thru_hole oval (at 5.08 0 180) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 11 "Net-(R1-Pad2)"))
+      (net 10 "Net-(R1-Pad2)"))
     (model ${KISYS3DMOD}/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
@@ -442,7 +440,7 @@
     (fp_line (start 6.05 1.15) (end 6.05 -1.15) (layer F.CrtYd) (width 0.05))
     (fp_line (start 6.05 -1.15) (end -0.95 -1.15) (layer F.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0 180) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 11 "Net-(R1-Pad2)"))
+      (net 10 "Net-(R1-Pad2)"))
     (pad 2 thru_hole oval (at 5.08 0 180) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
       (net 5 "Net-(R3-Pad2)"))
     (model ${KISYS3DMOD}/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal.wrl
@@ -578,7 +576,7 @@
     (fp_line (start 6.05 1.15) (end 6.05 -1.15) (layer F.CrtYd) (width 0.05))
     (fp_line (start 6.05 -1.15) (end -0.95 -1.15) (layer F.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 13 /Link))
+      (net 12 /Link))
     (pad 2 thru_hole oval (at 5.08 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
       (net 6 "Net-(R5-Pad1)"))
     (model ${KISYS3DMOD}/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal.wrl
@@ -614,7 +612,7 @@
     (pad 1 thru_hole circle (at 0 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
       (net 7 "Net-(C1-Pad1)"))
     (pad 2 thru_hole oval (at 5.08 0) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 8 "Net-(R8-Pad2)"))
+      (net 12 /Link))
     (model ${KISYS3DMOD}/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
@@ -646,7 +644,7 @@
     (fp_line (start 6.05 1.15) (end 6.05 -1.15) (layer F.CrtYd) (width 0.05))
     (fp_line (start 6.05 -1.15) (end -0.95 -1.15) (layer F.CrtYd) (width 0.05))
     (pad 1 thru_hole circle (at 0 0 90) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
-      (net 13 /Link))
+      (net 12 /Link))
     (pad 2 thru_hole oval (at 5.08 0 90) (size 1.4 1.4) (drill 0.7) (layers *.Cu *.Mask)
       (net 1 "Net-(BZ1-Pad1)"))
     (model ${KISYS3DMOD}/Resistors_THT.3dshapes/R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal.wrl
@@ -674,11 +672,11 @@
     (fp_line (start 3.81 1.27) (end -3.81 1.27) (layer F.SilkS) (width 0.15))
     (fp_line (start -3.81 1.27) (end -3.81 -1.27) (layer F.SilkS) (width 0.15))
     (pad 1 thru_hole oval (at -2.54 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
-      (net 12 "Net-(RD1-Pad1)"))
+      (net 11 "Net-(RD1-Pad1)"))
     (pad 2 thru_hole oval (at 2.54 0) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask)
-      (net 9 +9V))
+      (net 8 +9V))
     (pad 1 smd rect (at 0 0) (size 1.524 1.524) (layers F.Cu F.Paste F.Mask)
-      (net 12 "Net-(RD1-Pad1)"))
+      (net 11 "Net-(RD1-Pad1)"))
   )
 
   (module digikey-footprints:DIP-8_W7.62mm (layer F.Cu) (tedit 59930689) (tstamp 5B3E7A1E)
@@ -723,9 +721,9 @@
     (pad 6 thru_hole circle (at 7.62 5.08) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask)
       (net 7 "Net-(C1-Pad1)"))
     (pad 7 thru_hole circle (at 7.62 2.54) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask)
-      (net 8 "Net-(R8-Pad2)"))
+      (net 12 /Link))
     (pad 8 thru_hole circle (at 7.62 0) (size 1.6 1.6) (drill 1) (layers *.Cu *.Mask)
-      (net 11 "Net-(R1-Pad2)"))
+      (net 10 "Net-(R1-Pad2)"))
   )
 
   (module Diodes_THT:D_5KPW_P12.70mm_Horizontal (layer F.Cu) (tedit 5921392E) (tstamp 5B91861F)
@@ -761,9 +759,9 @@
     (fp_line (start 14.55 4.35) (end 14.55 -4.35) (layer F.CrtYd) (width 0.05))
     (fp_line (start 14.55 -4.35) (end -1.85 -4.35) (layer F.CrtYd) (width 0.05))
     (pad 1 thru_hole rect (at 0 0 180) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask)
-      (net 12 "Net-(RD1-Pad1)"))
+      (net 11 "Net-(RD1-Pad1)"))
     (pad 2 thru_hole oval (at 12.7 0 180) (size 3.2 3.2) (drill 1.6) (layers *.Cu *.Mask)
-      (net 11 "Net-(R1-Pad2)"))
+      (net 10 "Net-(R1-Pad2)"))
     (model ${KISYS3DMOD}/Diodes_THT.3dshapes/D_5KPW_P12.70mm_Horizontal.wrl
       (at (xyz 0 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
@@ -771,7 +769,7 @@
     )
   )
 
-  (segment (start 182.88 110.49) (end 182.88 93.98) (width 0.25) (layer F.Cu) (net 9))
-  (segment (start 182.88 110.49) (end 182.88 93.98) (width 0.25) (layer F.Cu) (net 9) (tstamp 5B91848A))
+  (segment (start 182.88 110.49) (end 182.88 93.98) (width 0.25) (layer F.Cu) (net 8))
+  (segment (start 182.88 110.49) (end 182.88 93.98) (width 0.25) (layer F.Cu) (net 8) (tstamp 5B91848A))
 
 )
