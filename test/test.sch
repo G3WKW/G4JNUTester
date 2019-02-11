@@ -33,7 +33,7 @@ Wire Wire Line
 	5650 4150 5650 4500
 Connection ~ 5650 4500
 $Comp
-L switches:SW_SPST SW1
+L test-rescue:SW_SPST-switches SW1
 U 1 1 5AD74382
 P 6800 2850
 F 0 "SW1" H 6800 2975 50  0000 C CNN
@@ -158,7 +158,7 @@ F 3 "" H 6050 4000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L test-rescue:PS1240P02BT BZ1
+L test-rescue:PS1240P02BT-test-rescue BZ1
 U 1 1 5AE1D2D9
 P 7650 4150
 F 0 "BZ1" H 7650 4350 60  0000 C CNN
@@ -245,7 +245,7 @@ F 3 "" H 8900 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L test-rescue:LM358P U1
+L test-rescue:LM358P-test-rescue U1
 U 1 1 5AD740CD
 P 5750 3650
 F 0 "U1" H 5450 3950 60  0000 C CNN
@@ -382,4 +382,48 @@ Wire Wire Line
 	7350 2850 7850 2850
 Wire Wire Line
 	7850 2850 8300 2850
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C5C9B1B
+P 3150 2550
+F 0 "H1" H 3250 2596 50  0000 L CNN
+F 1 "MountingHole" H 3250 2505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3150 2550 50  0001 C CNN
+F 3 "~" H 3150 2550 50  0001 C CNN
+	1    3150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C5C9BDD
+P 3200 4350
+F 0 "H2" H 3300 4396 50  0000 L CNN
+F 1 "MountingHole" H 3300 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 3200 4350 50  0001 C CNN
+F 3 "~" H 3200 4350 50  0001 C CNN
+	1    3200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C5C9C45
+P 8950 2500
+F 0 "H3" H 9050 2546 50  0000 L CNN
+F 1 "MountingHole" H 9050 2455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8950 2500 50  0001 C CNN
+F 3 "~" H 8950 2500 50  0001 C CNN
+	1    8950 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C5C9CBF
+P 9250 4350
+F 0 "H4" H 9350 4396 50  0000 L CNN
+F 1 "MountingHole" H 9350 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 9250 4350 50  0001 C CNN
+F 3 "~" H 9250 4350 50  0001 C CNN
+	1    9250 4350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
